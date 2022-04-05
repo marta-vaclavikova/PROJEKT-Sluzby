@@ -1,0 +1,188 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/*
+#FAFAFA pozadi stranky
+#000000 cerna
+#8B8B8B seda
+#FFFFFF bila
+#407BFF1F svetle modra
+#407BFF primarni modra
+*/
+body {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+	color: #8B8B8B;
+	background-color: #FAFAFA;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.travel {
+	margin: 60px auto;
+	max-width: 500px;
+	padding: 20px;
+}
+
+.travel p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/*	hlavicka  */
+.header {
+	text-align: center;
+}
+
+.header h1 {
+	font-weight: 500;
+	font-size: 28px;
+	color: #000000;
+}
+
+.header img {
+	width: 350px;
+	margin-bottom: 40px;
+}
+
+.header p {
+	margin: 40px 0;
+}
+
+.button a {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 400;
+	height: 40px;
+	padding: 10px 30px;
+	border-radius: 20px;
+    margin: 10px auto;
+	text-decoration: none;
+	display: block;
+}
+
+.adventure a {
+	background-color: #407BFF;
+	max-width: 195px;
+}
+
+.relax a {
+	background-color: #8B8B8B;
+	max-width: 225px;
+}
+
+
+/*  sluzby  */
+.services {
+	text-align: center;
+	margin-top: 60px;
+}
+.services h2 {
+	font-weight: 500;
+	font-size: 16px;
+	color: #000000;
+}
+.service {
+	box-shadow: 0px 4px 6px #407BFF1F;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+.service img {
+	margin: 20px;
+}
+
+.service p {
+	margin: 30px 30px 20px 30px;
+	font-size: 13px;
+}
+
+.service-description p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width:640px) {
+	.travel {
+		max-width: 768px;
+	}
+	.header img {
+		width: 400px;
+		margin-bottom: 30px;
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+	}
+	.adventure {
+		margin-right: 20px;
+	}
+	.services-list {
+		display: flex;
+	}
+	.service {
+		margin-right: 20px;
+		flex-direction: column;
+	}
+	.service p {
+		margin: 0 15px 20px 15px;
+	}
+}
+
+@media screen and (min-width:1100px) {
+	.travel {
+		max-width: 1040px;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo, .choice {
+		flex: 0 0 50%;
+	}	
+	.logo {
+		margin-left: 60px;
+	}	
+	.header img {
+		width: 425px;
+		margin-bottom: 0;
+	}
+	.logo {
+		order: 1;	
+	}
+	.services {
+		margin-top: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.services-list {
+		flex: 0 0 550px;
+	}
+	.service-description {
+		flex: 0 0 430px;
+		text-align: left;
+	}
+	.service-description p {
+		margin-bottom: 0;
+	}
+	.service-description-1 {
+		order: 1;
+		margin-left: 60px;
+	}
+	.service-description-2 {
+		margin-right: 60px;
+	}
+}
