@@ -49,6 +49,15 @@ p {
 	color: #000000;
 }
 
+.header h1::after {
+    content:'';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #407BFF;    
+    margin: 10px auto 0 auto;   
+}
+
 .header img {
 	width: 350px;
 	margin-bottom: 40px;
@@ -67,17 +76,17 @@ p {
 	border-radius: 20px;
     margin: 10px auto;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 }
 
 .adventure a {
 	background-color: #407BFF;
-	max-width: 195px;
+	width: auto;
 }
 
 .relax a {
 	background-color: #8B8B8B;
-	max-width: 225px;
+	width: auto;
 }
 
 
@@ -148,6 +157,11 @@ p {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: left;
+	}
+	.header h1::after {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.logo, .choice {
 		flex: 0 0 50%;
@@ -161,6 +175,9 @@ p {
 	}
 	.logo {
 		order: 1;	
+	}
+	.buttons {
+		justify-content: left;
 	}
 	.services {
 		margin-top: 80px;
