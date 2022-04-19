@@ -29,7 +29,6 @@ p {
 
 .travel {
 	margin: 60px auto;
-	max-width: 500px;
 	padding: 20px;
 }
 
@@ -123,9 +122,6 @@ p {
 }
 
 @media screen and (min-width:640px) {
-	.travel {
-		max-width: 768px;
-	}
 	.header img {
 		width: 400px;
 		margin-bottom: 30px;
@@ -134,14 +130,15 @@ p {
 		display: flex;
 		justify-content: center;
 	}
-	.adventure {
-		margin-right: 20px;
+	.button {
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 	.services-list {
 		display: flex;
+		gap: 20px;
 	}
 	.service {
-		margin-right: 20px;
 		flex-direction: column;
 	}
 	.service p {
@@ -163,14 +160,11 @@ p {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.logo, .choice {
+	.choice {
 		flex: 0 0 50%;
-	}	
-	.logo {
-		margin-left: 60px;
-	}	
+	}		
 	.header img {
-		width: 425px;
+		max-width: 425px;
 		margin-bottom: 0;
 	}
 	.logo {
